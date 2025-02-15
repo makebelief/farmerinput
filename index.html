@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmInputs Hub - Your One-Stop Shop for Agricultural Supplies</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script></head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i data-lucide="sprout" class="logo-icon"></i>
+                FarmInputs Hub
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">
+                    <i data-lucide="home"></i>
+                    Home
+                </a>
+                <a href="#products">
+                    <i data-lucide="package"></i>
+                    Products
+                </a>
+                <a href="#categories">
+                    <i data-lucide="layout-grid"></i>
+                    Categories
+                </a>
+                <a href="#cart" id="cart-icon">
+                    <i data-lucide="shopping-cart"></i>
+                    Cart (<span id="cart-count">0</span>)
+                </a>
+                <a href="#account">
+                    <i data-lucide="user"></i>
+                    Account
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Quality Farm Inputs for Better Yields</h1>
+            <p>Discover our wide range of seeds, fertilizers, and agricultural supplies</p>
+            <a href="#products" class="cta-button">
+                <i data-lucide="shopping-bag"></i>
+                Shop Now
+            </a>
+        </section>
+
+        <section id="categories" class="categories">
+            <h2>
+                <i data-lucide="tags"></i>
+                Product Categories
+            </h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <i data-lucide="sprout" class="category-icon"></i>
+                    <img src="/images/Screenshot from 2025-02-15 12-42-51.png" alt="Seeds">
+                    <h3>Seeds</h3>
+                </div>
+                <div class="category-card">
+                    <i data-lucide="flask-conical" class="category-icon"></i>
+                    <img src="/images/Screenshot from 2025-02-15 12-40-51.png" alt="Fertilizers">
+                    <h3>Fertilizers</h3>
+                </div>
+                <div class="category-card">
+                    <i data-lucide="droplets" class="category-icon"></i>
+                    <img src="/images/organic-natural-pesticides-web.jpg" alt="Pesticides">
+                    <h3>Pesticides</h3>
+                </div>
+                <div class="category-card">
+                    <i data-lucide="tractor" class="category-icon"></i>
+                    <img src="/images/tractor-on-field-stockcake.jpg" alt="Farming Tools">
+                    <h3>Farming Tools</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2>
+                <i data-lucide="package-search"></i>
+                Featured Products
+            </h2>
+            <div class="product-grid" id="product-container">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>
+                    <i data-lucide="contact"></i>
+                    Contact Us
+                </h3>
+                <p>
+                    <i data-lucide="mail"></i>
+                    Email: info@farminputshub.com
+                </p>
+                <p>
+                    <i data-lucide="phone"></i>
+                    Phone: +254 700 000000
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>
+                    <i data-lucide="list"></i>
+                    Quick Links
+                </h3>
+                <a href="#">
+                    <i data-lucide="info"></i>
+                    About Us
+                </a>
+                <a href="#">
+                    <i data-lucide="truck"></i>
+                    Shipping Policy
+                </a>
+                <a href="#">
+                    <i data-lucide="rotate-ccw"></i>
+                    Returns
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>
+                    <i data-lucide="mail"></i>
+                    Newsletter
+                </h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">
+                        <i data-lucide="send"></i>
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
